@@ -93,7 +93,7 @@ module.exports = function (config) {
         bot = await this.browser.newPage();
         bot.setViewport({"width": 1024, "height": 768});
         let user_agent = await this.browser.userAgent();
-        bot.setUserAgent(user_agent.replace("Headless", ""));
+        bot.setUserAgent(config.user_agent || user_agent.replace("Headless", ""));
 
         /**
          * Import libs

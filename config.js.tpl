@@ -40,6 +40,7 @@ module.exports = {
     "chrome_headless": true,
     "chrome_options": ["--disable-gpu", "--no-sandbox", "--window-size=1024x768"],
     "executable_path": "", // example for Mac OS: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+    "user_agent": "", // set Puppeteers user agent
 
     // DATABASES
     "fdfdatabase_path": "./databases/fdf.db", // databases with username of followed users with follodefollow mode
